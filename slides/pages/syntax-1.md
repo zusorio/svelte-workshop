@@ -125,7 +125,6 @@ clicks: 2
 ```svelte
 <script>
   let count = 0;
-  let text = "";
 
   function handleClick() {
     count += 1;
@@ -136,6 +135,33 @@ clicks: 2
     Clicked {count}
 </button>
 
+<button on:click|once={() => alert('clicked')}>
+	Click me
+</button>
+
+```
+
+::comments::
+
+- Events werden mit `on:` definiert
+  - Event Modifikationen:
+    - `preventDefault` verhindert das Default Verhalten
+    - `once` Event wird nur einmal ausgeführt
+
+---
+layout: code-with-comments
+clicks: 2
+---
+
+# Syntax - Binding
+
+::code::
+```svelte
+<script>
+  let text = "";
+
+</script>
+
 Hello {text}
 <input bind:value={text} />
 
@@ -143,7 +169,6 @@ Hello {text}
 
 ::comments::
 
-- Events werden mit `on:` definiert
 - `bind:` ermöglicht State von einem Child-Component zu einem Parent-Component zu übertragen
 
 ---
