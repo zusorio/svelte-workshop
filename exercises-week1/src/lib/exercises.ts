@@ -6,6 +6,14 @@ export const exercises: Exercise[] = [
 		difficulty: 1,
 		exercise: '/exercise-1',
 		solution: '/exercise-1/solution'
+	},
+	{
+		number: '2',
+		name: 'Dynamische Variable',
+		description: 'Ändere den Wert eine Variable dynamisch.',
+		difficulty: 1,
+		exercise: '/exercise-2',
+		solution: '/exercise-2/solution'
 	}
 ];
 
