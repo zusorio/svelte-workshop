@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Svelte Workshop</title>
+  </head>
+  <body>
+    <main class="p-8 mx-auto max-w-2xl space-y-2">
+      <h1 class="text-4xl font-bold">Web Dev Workshop: Svelte</h1>
+      <div>
+        <a class="underline text-lg" href="">Folien</a>
+        <a
+          class="underline text-lg"
+          href="https://github.com/zusorio/svelte-workshop"
+          >Code</a
+        >
+      </div>
+
+      <h2 class="text-3xl font-semibold">Übungen Woche 1</h2>
+
+      <div class="prose">
+        <pre><code>git clone https://github.com/zusorio/svelte-workshop.git</code></pre>
+      </div>
+
+      <p>oder</p>
+
+      <a
+        href="https://stackblitz.com/github/zusorio/svelte-workshop/tree/main/exercises-week1"
+      >
+        <img
+          alt="Open in StackBlitz"
+          src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+        />
+      </a>
+    </main>
+  </body>
+</html>

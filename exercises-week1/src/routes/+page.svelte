@@ -3,7 +3,7 @@
 </script>
 
 <main class="container mx-auto p-8">
-	<div class="grid grid-cols-4">
+	<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
 		{#each exercises as exercise (exercise.name)}
 			<a href={exercise.exercise}>
 				<article class="rounded-lg bg-white p-4 shadow-lg outline outline-2 outline-sky-600">
