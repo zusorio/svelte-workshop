@@ -51,9 +51,21 @@
 
 		{#if currentExercise}
 			<div>
-				<div style:view-transition-name={`ex-${currentExercise.number}-number`}>
-					<span class="uppercase tracking-wide text-zinc-700">Aufgabe {currentExercise.number}</span
-					>
+				<div
+					class="flex items-center gap-2"
+					style:view-transition-name={`ex-${currentExercise.number}-number`}
+				>
+					<a href="/" class="inline-block">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								fill="#3f3f46"
+								d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20v-2z"
+							/>
+						</svg>
+					</a>
+					<span class="uppercase tracking-wide text-zinc-700">
+						Aufgabe {currentExercise.number}
+					</span>
 					<span>{'⭐'.repeat(currentExercise.difficulty)}</span>
 				</div>
 
