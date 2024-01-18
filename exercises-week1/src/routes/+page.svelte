@@ -10,7 +10,10 @@
 				<article
 					class="rounded-lg bg-white p-4 shadow-lg outline outline-2 outline-sky-600 transition hover:shadow-xl hover:outline-sky-500"
 				>
-					<div style:view-transition-name={`ex-${exercise.number}-number`}>
+					<div
+						style:view-transition-name={`ex-${exercise.number}-number`}
+						class="flex items-center gap-2"
+					>
 						<span class="uppercase tracking-wide text-zinc-700">Aufgabe {exercise.number}</span>
 						<span>{'⭐'.repeat(exercise.difficulty)}</span>
 					</div>
