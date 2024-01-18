@@ -3,6 +3,7 @@
 	import '@fontsource-variable/dm-sans';
 	import { exercises } from '$lib/exercises';
 	import { page } from '$app/stores';
+	import { onNavigate } from '$app/navigation';
 
 	$: currentExercise = exercises.find(
 		(exercise) =>
@@ -22,26 +23,47 @@
 			})
 		});
 	}
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 {#if !currentExercise}
 	<slot />
 {:else}
 	<main class="mx-auto max-w-4xl space-y-4 p-8">
-		<div class=" rounded-lg bg-white p-6 shadow-lg outline outline-2 outline-sky-600">
+		<div
+			class="rounded-lg bg-white p-6 shadow-lg outline outline-2"
+			class:outline-sky-600={!isSolution}
+			class:outline-amber-600={isSolution}
+			style:view-transition-name={`ex-${currentExercise.number}`}
+		>
 			<slot />
 		</div>
 
 		{#if currentExercise}
 			<div>
-				<div>
+				<div style:view-transition-name={`ex-${currentExercise.number}-number`}>
 					<span class="uppercase tracking-wide text-zinc-700">Aufgabe {currentExercise.number}</span
 					>
 					<span>{'⭐'.repeat(currentExercise.difficulty)}</span>
 				</div>
 
 				<div class="flex items-center gap-3">
-					<h1 class="text-2xl font-bold">{currentExercise.name}</h1>
+					<h1
+						style:view-transition-name={`ex-${currentExercise.number}-heading`}
+						class="text-2xl font-bold"
+					>
+						{currentExercise.name}
+					</h1>
 
 					<button class="font-bold underline" on:click={openInEditor}>
 						{isSolution ? 'Lösung öffnen' : 'Aufgabe öffnen'}
@@ -51,12 +73,14 @@
 
 				<div class="mt-4 grid max-w-xs grid-cols-2 gap-2">
 					<a
+						data-sveltekit-replacestate
 						class={`rounded-lg bg-gray-800 ${isSolution ? ' hover:bg-gray-700' : 'opacity-80'} px-1 py-1 text-center font-medium text-white`}
 						href={isSolution ? currentExercise.exercise : null}
 					>
 						Aufgabe
 					</a>
 					<a
+						data-sveltekit-replacestate
 						class={`rounded-lg bg-gray-800 ${!isSolution ? ' hover:bg-gray-700' : 'opacity-80'} px-1 py-1 text-center font-medium text-white`}
 						href={!isSolution ? currentExercise.solution : null}
 					>
