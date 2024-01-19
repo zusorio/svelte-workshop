@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "npx playwright install --with-deps && slidev build",
+    "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export"
   },
@@ -11,8 +11,5 @@
     "@slidev/cli": "^0.46.1",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest"
-  },
-  "devDependencies": {
-    "playwright-chromium": "^1.41.0"
   }
 }
