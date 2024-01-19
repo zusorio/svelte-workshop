@@ -1,9 +1,12 @@
 <script lang="ts">
-	import '../app.pcss';
-	import '@fontsource-variable/dm-sans';
-	import { exercises } from '$lib/exercises';
-	import { page } from '$app/stores';
 	import { onNavigate } from '$app/navigation';
+	import { page } from '$app/stores';
+	import { exercises } from '$lib/exercises';
+	import '@fontsource-variable/dm-sans';
+	import '@fontsource/gaegu/300.css';
+	import '@fontsource/gaegu/400.css';
+	import '@fontsource/gaegu/700.css';
+	import '../app.pcss';
 
 	$: currentExercise = exercises.find(
 		(exercise) =>
@@ -35,6 +38,14 @@
 		});
 	});
 </script>
+
+<svelte:head>
+	{#if currentExercise}
+		<title>{currentExercise.name} | Svelte Workshop</title>
+	{:else}
+		<title>Svelte Workshop</title>
+	{/if}
+</svelte:head>
 
 {#if !currentExercise}
 	<slot />
