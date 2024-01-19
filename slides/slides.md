@@ -5,6 +5,7 @@ lineNumbers: true
 transition: slide-left
 mdc: true
 background: /svelte-machine.png
+download: true
 ---
 
 # Svelte
