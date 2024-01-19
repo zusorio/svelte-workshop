@@ -12,11 +12,19 @@ export const exerciseGroups: ExerciseGroup[] = [
 			},
 			{
 				number: '2',
-				name: 'Dynamische Variable',
+				name: 'Binding',
 				description: 'Ändere den Wert eine Variable dynamisch.',
 				difficulty: 1,
 				exercise: '/exercise-02-binding',
 				solution: '/exercise-02-binding/solution'
+			},
+			{
+				number: '3',
+				name: 'Loops',
+				description: 'Zeige mehrere Elemente mit Hilfe von Loops an.',
+				difficulty: 1,
+				exercise: '/exercise-03-loops',
+				solution: '/exercise-03-loops/solution'
 			}
 		]
 	},
@@ -24,28 +32,28 @@ export const exerciseGroups: ExerciseGroup[] = [
 		name: 'Cookie Clicker',
 		exercises: [
 			{
-				number: '3a',
+				number: '4a',
 				name: 'Cookie Clicker: Teil 1',
 				description: 'Erstelle einen Klon von Cookie Clicker.',
 				difficulty: 1,
-				exercise: '/exercise-03a-cookie-clicker',
-				solution: '/exercise-03a-cookie-clicker/solution'
+				exercise: '/exercise-04a-cookie-clicker',
+				solution: '/exercise-04a-cookie-clicker/solution'
 			},
 			{
-				number: '3b',
+				number: '4b',
 				name: 'Cookie Clicker: Teil 2',
 				description: 'Erstelle einen Klon von Cookie Clicker.',
 				difficulty: 2,
-				exercise: '/exercise-03b-cookie-clicker',
-				solution: '/exercise-03b-cookie-clicker/solution'
+				exercise: '/exercise-04b-cookie-clicker',
+				solution: '/exercise-04b-cookie-clicker/solution'
 			},
 			{
-				number: '3c',
+				number: '4c',
 				name: 'Cookie Clicker: Teil 3',
 				description: 'Erstelle einen Klon von Cookie Clicker.',
 				difficulty: 2,
-				exercise: '/exercise-03c-cookie-clicker',
-				solution: '/exercise-03c-cookie-clicker/solution'
+				exercise: '/exercise-04c-cookie-clicker',
+				solution: '/exercise-04c-cookie-clicker/solution'
 			}
 		]
 	},
@@ -53,7 +61,7 @@ export const exerciseGroups: ExerciseGroup[] = [
 		name: 'Komponenten',
 		exercises: [
 			{
-				number: '4',
+				number: '5',
 				name: 'Component erstellen',
 				description: 'Erstelle eine Button Component.',
 				difficulty: 1,
