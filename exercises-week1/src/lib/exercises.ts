@@ -58,25 +58,32 @@ export const exerciseGroups: ExerciseGroup[] = [
 		]
 	},
 	{
-		name: 'Komponenten',
+		name: 'Component Basics',
 		exercises: [
 			{
-				number: '5',
-				name: 'Component erstellen',
+				number: '5a',
+				name: 'Component Basics',
 				description: 'Erstelle eine Button Component.',
 				difficulty: 1,
-				exercise: '/exercise-button',
-				solution: '/exercise-button/solution'
+				exercise: '/exercise-05a-component-basics',
+				solution: '/exercise-05a-component-basics/solution'
 			},
 			{
-				number: '6',
-				name: 'Erweiterter Button',
+				number: '5b',
+				name: 'Component Basics',
 				description: 'Erstelle eine Button Component.',
-				difficulty: 3,
-				exercise: '/exercise-button-2',
-				solution: '/exercise-button-2/solution'
+				difficulty: 1,
+				exercise: '/exercise-05b-component-basics',
+				solution: '/exercise-05b-component-basics/solution'
+			},
+			{
+				number: '5c',
+				name: 'Component Basics',
+				description: 'Erstelle eine Button Component.',
+				difficulty: 1,
+				exercise: '/exercise-05c-component-basics',
+				solution: '/exercise-05c-component-basics/solution'
 			}
-			
 		]
 	}
 ];
