@@ -122,7 +122,7 @@ clicks: 2
 # Syntax - Events
 
 ::code::
-```svelte
+```svelte {all|9,13|all}
 <script>
   let count = 0;
 
@@ -143,14 +143,19 @@ clicks: 2
 
 ::comments::
 
+<div>
+
 - Events werden mit `on:` definiert
-  - Event Modifikationen:
+<v-clicks at="0">
+
+- Event Modifiers:
     - `preventDefault` verhindert das Default Verhalten
     - `once` Event wird nur einmal ausgeführt
+</v-clicks>
+</div>
 
 ---
 layout: code-with-comments
-clicks: 2
 ---
 
 # Syntax - Binding

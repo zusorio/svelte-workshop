@@ -1,43 +1,100 @@
-export const exercises: Exercise[] = [
-    {
-        number: '1',
-        name: 'Dein erster Component',
-        description: 'Zeige eine Variable in einem Component an.',
-        difficulty: 1,
-        exercise: '/exercise-1',
-        solution: '/exercise-1/solution'
-    },
-    {
-        number: '2',
-        name: 'Dynamische Variable',
-        description: 'Ändere den Wert eine Variable dynamisch.',
-        difficulty: 1,
-        exercise: '/exercise-2',
-        solution: '/exercise-2/solution'
-    },
-    {
-        number: '3',
-        name: 'Component erstellen',
-        description: 'Erstelle eine Button Component.',
-        difficulty: 1,
-        exercise: '/exercise-button',
-        solution: '/exercise-button/solution'
-    },
-    {
-        number: '4',
-        name: 'Erweiterter Button',
-        description: 'Erstelle eine Button Component.',
-        difficulty: 3,
-        exercise: '/exercise-button-2',
-        solution: '/exercise-button-2/solution'
-    }
+export const exerciseGroups: ExerciseGroup[] = [
+	{
+		name: 'Einführung',
+		exercises: [
+			{
+				number: '1',
+				name: 'Hello World!',
+				description: 'Zeige eine Variable in einem Component an.',
+				difficulty: 1,
+				exercise: '/exercise-01-hello-world',
+				solution: '/exercise-01-hello-world/solution'
+			},
+			{
+				number: '2',
+				name: 'Binding',
+				description: 'Ändere den Wert eine Variable dynamisch.',
+				difficulty: 1,
+				exercise: '/exercise-02-binding',
+				solution: '/exercise-02-binding/solution'
+			},
+			{
+				number: '3',
+				name: 'Loops',
+				description: 'Zeige mehrere Elemente mit Hilfe von Loops an.',
+				difficulty: 1,
+				exercise: '/exercise-03-loops',
+				solution: '/exercise-03-loops/solution'
+			}
+		]
+	},
+	{
+		name: 'Cookie Clicker',
+		exercises: [
+			{
+				number: '4a',
+				name: 'Cookie Clicker: Teil 1',
+				description: 'Erstelle einen Klon von Cookie Clicker.',
+				difficulty: 1,
+				exercise: '/exercise-04a-cookie-clicker',
+				solution: '/exercise-04a-cookie-clicker/solution'
+			},
+			{
+				number: '4b',
+				name: 'Cookie Clicker: Teil 2',
+				description: 'Erstelle einen Klon von Cookie Clicker.',
+				difficulty: 2,
+				exercise: '/exercise-04b-cookie-clicker',
+				solution: '/exercise-04b-cookie-clicker/solution'
+			},
+			{
+				number: '4c',
+				name: 'Cookie Clicker: Teil 3',
+				description: 'Erstelle einen Klon von Cookie Clicker.',
+				difficulty: 2,
+				exercise: '/exercise-04c-cookie-clicker',
+				solution: '/exercise-04c-cookie-clicker/solution'
+			}
+		]
+	},
+	{
+		name: 'Komponenten',
+		exercises: [
+			{
+				number: '5',
+				name: 'Component erstellen',
+				description: 'Erstelle eine Button Component.',
+				difficulty: 1,
+				exercise: '/exercise-button',
+				solution: '/exercise-button/solution'
+			},
+			{
+				number: '6',
+				name: 'Erweiterter Button',
+				description: 'Erstelle eine Button Component.',
+				difficulty: 3,
+				exercise: '/exercise-button-2',
+				solution: '/exercise-button-2/solution'
+			}
+			
+		]
+	}
 ];
 
+export const exercises: Exercise[] = exerciseGroups
+	.map((group) => group.exercises)
+	.reduce((prev, curr) => prev.concat(curr), []);
+
 export interface Exercise {
-    number: string;
-    name: string;
-    description: string;
-    exercise: string;
-    solution: string;
-    difficulty: number;
+	number: string;
+	name: string;
+	description: string;
+	exercise: string;
+	solution: string;
+	difficulty: number;
+}
+
+export interface ExerciseGroup {
+	name: string;
+	exercises: Exercise[];
 }

@@ -2,16 +2,9 @@
 theme: default
 highlighter: shikiji
 lineNumbers: true
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-drawings:
-  persist: false
 transition: slide-left
-title: Welcome to Slidev
 mdc: true
+background: /svelte-machine.png
 ---
 
 # Svelte
@@ -21,25 +14,26 @@ mdc: true
 ## Tobias Meßner, Phillip Rügamer, Maike Kramer
 
 ---
+layout: section
+---
+# Kurzes Recap
 
-# Was ist Svelte
+---
 
-<v-clicks>
-
-- Front-end Framework
-- Vergleichbar mit React, Vue, Angular
-- Von Rich Harris entwickelt
-- Erste Version 2016
-- Großer Unterschied: Svelte verwendet einen Compiler
-</v-clicks>
+# Warum verwenden wir React?
+- React-Code ist deklarativ
+  - Wir beschreiben die Struktur der UI
+  - React kümmert sich um die Änderungen
+- Wir müssen uns nicht um den DOM kümmern
+  - `document.createElement`, `document.appendChild`, `document.removeChild` etc.
 
 ---
 layout: statement
 ---
-# Problem
+## Problem
 <v-click>
 
-## DOM ist langsam
+# DOM ist langsam
 
 </v-click>
 ---
@@ -60,9 +54,9 @@ layout: statement
 ---
 layout: statement
 ---
-# Problem gelöst?
+## Problem gelöst?
 
-<h2 v-click>Nein</h2>
+<h1 v-click>Nein</h1>
 
 ---
 layout: statement
@@ -72,6 +66,19 @@ layout: statement
 <h2 v-click>
   ...der Virtual DOM ist immer noch langsam
 </h2>
+
+---
+
+# Was ist Svelte
+
+<v-clicks>
+
+- Front-end Framework
+- Vergleichbar mit React, Vue, Angular
+- Von Rich Harris entwickelt
+- Erste Version 2016
+- Großer Unterschied: Svelte verwendet einen Compiler
+</v-clicks>
 
 ---
 
@@ -145,43 +152,31 @@ url: https://svelte.dev/repl/7431d8f0a9a0432ab6270743f3d122e8?version=4.2.8
 - Gekapselte Styles
 
 ---
-src: ./pages/syntax-1.md
+src: ./pages/1-syntax.md
 ---
 
 ---
-layout: code-with-comments
+layout: statement
+transition: slide-up
 ---
 
-# Components - Props
+## Übungen
+# wdw.zsr.app
 
-::code::
+---
+layout: iframe
+name: WDW embed
+url: https://wdw.zsr.app
+transition: slide-down
+---
 
-<div>
-```svelte {1-3,6-9|1,4-9}
-<script>
-  export let name = "World";
+---
+layout: statement
+---
 
-  let className = "";
-  export { className as class };
-</script>
+## Übungen
+# wdw.zsr.app
 
-<div class={className}>Hello {name}!</div>
-```
-
-```svelte {1-5|1-4,6}
-<script>
-  import Hello from './Hello.svelte';
-</script>
-
-<Hello name="Webdev Workshop" />
-<Hello name="Big Webdev Workshop" class="text-xl" />
-```
-</div>
-
-::comments::
-
-- Props werden mit `export` definiert
-- Reservierte Props können nicht direkt als Props verwendet werden
-  - Umgehen mit <br> `export { reservedProp as prop }`
-
-
+---
+src: ./pages/2-components.md
+---

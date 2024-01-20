@@ -5,12 +5,15 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['DM Sans Variable', ...require('tailwindcss/defaultTheme').fontFamily.sans]
+				sans: ['DM Sans Variable', ...require('tailwindcss/defaultTheme').fontFamily.sans],
+				hand: ['Gaegu', ...require('tailwindcss/defaultTheme').fontFamily.sans]
 			}
 		}
 	},
 
-	plugins: []
+	plugins: [
+		require('@tailwindcss/forms'),
+	]
 };
 
 module.exports = config;

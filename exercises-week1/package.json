@@ -13,9 +13,11 @@
 	},
 	"devDependencies": {
 		"@fontsource-variable/dm-sans": "^5.0.3",
+		"@fontsource/gaegu": "^5.0.17",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@tailwindcss/forms": "^0.5.7",
 		"autoprefixer": "^10.4.16",
 		"launch-editor": "^2.6.1",
 		"postcss": "^8.4.32",
