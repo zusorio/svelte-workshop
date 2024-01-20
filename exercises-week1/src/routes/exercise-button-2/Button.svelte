@@ -14,9 +14,7 @@
     }
 
     shadow ? classNames += " shadow-md " : "";
-
 </script>
 
 <button class={classNames} >
-    <slot>Fallback</slot>
 </button>
