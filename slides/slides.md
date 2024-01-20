@@ -189,7 +189,7 @@ layout: statement
 
 ## Übungen
 # wdw.zsr.app
-## 5) - 6)
+## 5a) - 5c)
 
 ---
 
