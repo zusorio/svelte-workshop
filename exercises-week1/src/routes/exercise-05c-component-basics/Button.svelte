@@ -13,16 +13,11 @@
      */
     export let customClasses = "";
     let classNames = customClasses + " bg-blue-100 rounded-md hover:bg-blue-400 transition-colors flex my-2 p-2"
-    let isLeftHovered = false;
 </script>
 
-<button class={classNames} on:click>
-    {#if $$slots.leftContent}
-        <div class="mr-1" role="button" tabindex="0"
-             on:mouseenter={() => (isLeftHovered = true)}
-             on:mouseleave={() => (isLeftHovered = false)}>
-            <slot name="leftContent"></slot>
-        </div>
-    {/if}
-    <slot {isLeftHovered}></slot>
+<button>
+    <div id="left" class="mr-1" role="button" tabindex="0"
+         on:mouseenter={() => true}
+         on:mouseleave={() => false}>
+    </div>
 </button>
