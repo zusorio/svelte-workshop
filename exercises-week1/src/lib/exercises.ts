@@ -72,7 +72,7 @@ export const exerciseGroups: ExerciseGroup[] = [
 				number: '5b',
 				name: 'Component Basics',
 				description: 'Erstelle eine Button Component.',
-				difficulty: 1,
+				difficulty: 2,
 				exercise: '/exercise-05b-component-basics',
 				solution: '/exercise-05b-component-basics/solution'
 			},
@@ -80,7 +80,7 @@ export const exerciseGroups: ExerciseGroup[] = [
 				number: '5c',
 				name: 'Component Basics',
 				description: 'Erstelle eine Button Component.',
-				difficulty: 1,
+				difficulty: 3,
 				exercise: '/exercise-05c-component-basics',
 				solution: '/exercise-05c-component-basics/solution'
 			}
