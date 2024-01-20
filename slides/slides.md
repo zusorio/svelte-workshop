@@ -162,6 +162,7 @@ transition: slide-up
 
 ## Übungen
 # wdw.zsr.app
+## 1) - 4c)
 
 ---
 layout: iframe
@@ -176,7 +177,45 @@ layout: statement
 
 ## Übungen
 # wdw.zsr.app
+## 1) - 4c)
 
 ---
 src: ./pages/2-components.md
 ---
+
+---
+layout: statement
+---
+
+## Übungen
+# wdw.zsr.app
+## 5) - 6)
+
+---
+
+# Svelte kann noch so viel mehr
+- Svelte Stores
+- `<svelte:head>`
+- Transitions
+- Animationen
+- CSS Variables
+- `{@const }`
+- `{#await }`
+- ...
+
+---
+layout: statement
+---
+## Schaut euch das interaktive Tutorial an
+# learn.svelte.dev
+
+---
+layout: statement
+---
+## Nächste Woche
+# SvelteKit
+
+---
+layout: statement
+---
+# Vielen Dank für eure Aufmerksamkeit
