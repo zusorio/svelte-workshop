@@ -1,26 +1,14 @@
 <script>
     import Button from "./Button.svelte";
-    import IconCat from "../IconCat.svelte";
-    import IconDog from "../IconDog.svelte";
+    /**
+     *  - Erstelle in der gegebenen Button Component ein Fallbackslot mit dem Inhalt "Fallback" und binden diesen hier ein
+     *  - Binde einen weiteren Button ein mit dem Text "lorem ipsum"
+     *  - Vielleicht hast du schon gesehen das in der Button Component die größe und einen Schatten zu dem Button hinzugefügt werden kann.
+     *     Erstelle hier einen weiteren Button, dieser soll die größe "medium" haben sowie einen Schatten. Verwende dabei kein CSS,
+     *     sondern änder dies mit den Props
+     */
+    let size = "medium"
 </script>
-
-<Button >
-    <div slot="leftContent"></div>
-</Button>
-
-<Button let:x shadow customClasses="bg-red-100" >
-    {x}
-    <div slot="leftContent"></div>
-</Button>
-
-<Button let:isLeftHovered shadow customClasses="bg-green-100 hover:bg-green-300">
-    Katze {#if isLeftHovered} : Miau {/if}
-    <div slot="leftContent"><IconCat /></div>
-</Button>
-
-<Button let:isLeftHovered shadow customClasses="bg-blue-100 hover:bg-blue-300" >
-    Hund {#if isLeftHovered} : Wuff {/if}
-    <div slot="leftContent"><IconDog /></div>
-</Button>
-
-<Button on:click={() => alert("eine Nachricht")} customClasses="bg-red-400">Alert</Button>
+<Button></Button>
+<Button>Lorem ipsum</Button>
+<Button size={size} shadow={true}>Ein mittlerer Button</Button>
