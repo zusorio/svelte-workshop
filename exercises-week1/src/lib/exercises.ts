@@ -22,6 +22,14 @@ export const exercises: Exercise[] = [
         difficulty: 1,
         exercise: '/exercise-button',
         solution: '/exercise-button/solution'
+    },
+    {
+        number: '4',
+        name: 'Erweiterter Button',
+        description: 'Erstelle eine Button Component.',
+        difficulty: 3,
+        exercise: '/exercise-button-2',
+        solution: '/exercise-button-2/solution'
     }
 ];
 

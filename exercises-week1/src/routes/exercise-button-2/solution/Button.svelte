@@ -1,12 +1,12 @@
 <script>
     export let size = "small"
     export let shadow = false;
-    export let customClass = undefined;
+    export let customClasses = "";
     export let disabled = false;
 
     let isLeftHovered = false;
     let string = "lorem ipsum";
-    let classNames = customClass + " bg-blue-100 rounded-md hover:bg-red-400 transition-colors flex my-2 "
+    let classNames = customClasses + " bg-blue-100 rounded-md hover:bg-blue-400 transition-colors flex my-2 "
 
     switch (size) {
         case "medium":
@@ -18,8 +18,7 @@
             classNames += " p-2 "
     }
 
-    shadow ? classNames += " shadow-md ": "";
-
+    shadow ? classNames += " shadow-md " : "";
 </script>
 
 <button class={classNames} on:click {disabled}>
