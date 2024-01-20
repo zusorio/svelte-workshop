@@ -4,7 +4,7 @@ transition: slide-up
 ---
 
 # Syntax
-
+<!--Präsentation: Tobi-->
 ---
 layout: code-with-comments
 clicks: 4
@@ -63,7 +63,7 @@ clicks: 4
   </v-click>
 </div>
 
-
+<!--Präsentation: Phillip-->
 ---
 layout: code-with-comments
 clicks: 4
@@ -113,7 +113,7 @@ clicks: 4
 </v-click>
 
 </div>
-
+<!--Präsentation: Phillip-->
 ---
 layout: code-with-comments
 clicks: 2
@@ -153,6 +153,7 @@ clicks: 2
     - `once` Event wird nur einmal ausgeführt
 </v-clicks>
 </div>
+<!--Präsentation: Tobi-->
 
 ---
 layout: code-with-comments
@@ -175,7 +176,7 @@ Hello {text}
 ::comments::
 
 - `bind:` ermöglicht State von einem Child-Component zu einem Parent-Component zu übertragen
-
+<!--Präsentation: Tobi-->
 ---
 layout: code-with-comments
 clicks: 2
@@ -216,7 +217,7 @@ clicks: 2
   </v-click>
 
 </div>
-
+<!--Präsentation: Phillip-->
 ---
 layout: code-with-comments
 clicks: 5
@@ -250,7 +251,7 @@ transition: slide-down
   - Wie `key` in React
 - Optional: `index` um den Index zu definieren
 </v-clicks>
-
+<!--Präsentation: Phillip-->
 ---
 layout: section
 ---

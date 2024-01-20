@@ -13,11 +13,13 @@ background: /svelte-machine.png
 
 ## Tobias Meßner, Phillip Rügamer, Maike Kramer
 
+<!--Präsentation: Tobi-->
 ---
 layout: section
 ---
 # Kurzes Recap
 
+<!--Präsentation: Tobi-->
 ---
 
 # Warum verwenden wir React?
@@ -26,7 +28,7 @@ layout: section
   - React kümmert sich um die Änderungen
 - Wir müssen uns nicht um den DOM kümmern
   - `document.createElement`, `document.appendChild`, `document.removeChild` etc.
-
+<!--Präsentation: Tobi-->
 ---
 layout: statement
 ---
@@ -34,8 +36,8 @@ layout: statement
 <v-click>
 
 # DOM ist langsam
-
 </v-click>
+<!--Präsentation: Tobi-->
 ---
 
 # Wie funktioniert React
@@ -50,13 +52,14 @@ layout: statement
   - Nur die Elemente, die sich geändert haben, werden im echten DOM geändert
 - Dadurch wird der echte DOM nur minimal verändert
 </v-clicks>
-
+<!--Präsentation: Tobi-->
 ---
 layout: statement
 ---
 ## Problem gelöst?
 
 <h1 v-click>Nein</h1>
+<!--Präsentation: Tobi-->
 
 ---
 layout: statement
@@ -66,7 +69,7 @@ layout: statement
 <h2 v-click>
   ...der Virtual DOM ist immer noch langsam
 </h2>
-
+<!--Präsentation: Tobi-->
 ---
 
 # Was ist Svelte
@@ -79,6 +82,7 @@ layout: statement
 - Erste Version 2016
 - Großer Unterschied: Svelte verwendet einen Compiler
 </v-clicks>
+<!--Präsentation: Phillip-->
 
 ---
 
@@ -92,8 +96,7 @@ layout: statement
   - Für jede State-Änderung wird Code generiert, der den DOM direkt ändert
   - Dadurch wird der DOM nur minimal verändert, und ohne den zusätzlichen Overhead des Virtual DOMs
 </v-clicks>
-
-
+<!--Präsentation: Phillip-->
 ---
 layout: code-with-comments
 clicks: 4
@@ -133,14 +136,13 @@ clicks: 4
   - `<style>` - Styling
 </v-clicks>
 </div>
-
-
+<!--Präsentation: Maike-->
 ---
 layout: iframe
 url: https://svelte.dev/repl/7431d8f0a9a0432ab6270743f3d122e8?version=4.2.8
 ---
-
-
+<!--Präsentation: Tobi-->
+---
 
 # Components
 
@@ -150,7 +152,7 @@ url: https://svelte.dev/repl/7431d8f0a9a0432ab6270743f3d122e8?version=4.2.8
 - Können Props erhalten
 - Können Events emitten
 - Gekapselte Styles
-
+<!--Präsentation: Maike-->
 ---
 src: ./pages/1-syntax.md
 ---
@@ -163,7 +165,7 @@ transition: slide-up
 ## Übungen
 # wdw.zsr.app
 ## 1) - 4c)
-
+<!--Präsentation: Tobi-->
 ---
 layout: iframe
 name: WDW embed
@@ -178,7 +180,7 @@ layout: statement
 ## Übungen
 # wdw.zsr.app
 ## 1) - 4c)
-
+<!--Präsentation: Tobi-->
 ---
 src: ./pages/2-components.md
 ---
@@ -190,7 +192,7 @@ layout: statement
 ## Übungen
 # wdw.zsr.app
 ## 5a) - 5c)
-
+<!--Präsentation: Tobi-->
 ---
 
 # Svelte kann noch so viel mehr
@@ -202,20 +204,21 @@ layout: statement
 - `{@const }`
 - `{#await }`
 - ...
-
+<!--Präsentation: Tobi-->
 ---
 layout: statement
 ---
 ## Schaut euch das interaktive Tutorial an
 # learn.svelte.dev
-
+<!--Präsentation: Tobi-->
 ---
 layout: statement
 ---
 ## Nächste Woche
 # SvelteKit
-
+<!--Präsentation: Tobi-->
 ---
 layout: statement
 ---
 # Vielen Dank für eure Aufmerksamkeit
+<!--Präsentation: Tobi-->

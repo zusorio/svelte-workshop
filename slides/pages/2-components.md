@@ -4,7 +4,7 @@ transition: slide-up
 ---
 
 # Components
-
+<!--Präsentation: Maike-->
 ---
 layout: stacked-code-with-comments
 clicks: 3
@@ -43,7 +43,7 @@ clicks: 3
 - Reservierte Props können nicht direkt als Props verwendet werden
   - Umgehen mit <br> `export { reservedProp as prop }`
 </v-clicks>
-
+<!--Präsentation: Maike-->
 ---
 layout: stacked-code-with-comments
 ---
@@ -75,7 +75,7 @@ layout: stacked-code-with-comments
 
 - Events ohne Handler werden an den Parent-Component weitergeleitet
 </v-clicks>
-
+<!--Präsentation: Phillip-->
 ---
 layout: stacked-code-with-comments
 clicks: 3
@@ -121,7 +121,7 @@ clicks: 3
 - Es hat einen `default`-Slot, welcher verwendet wird, wenn kein Slot angegeben wird
 - Slots können benannt werden und werden dann mit `slot="name"` referenziert
 </v-clicks>
-
+<!--Präsentation: Maike-->
 ---
 layout: stacked-code-with-comments
 transition: slide-down
@@ -164,9 +164,10 @@ transition: slide-down
 - Styles werden nur auf den Component angewendet
 - Mit `:global()` können Styles global angewendet werden
 
-
+<!--Präsentation: Tobi-->
 ---
 layout: section
 ---
 
 # Components
+<!--Präsentation: Maike-->
