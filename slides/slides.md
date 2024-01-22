@@ -144,7 +144,7 @@ clicks: 4
 <!--Präsentation: Maike-->
 ---
 layout: iframe
-url: https://svelte.dev/repl/7431d8f0a9a0432ab6270743f3d122e8?version=4.2.8
+url: https://svelte.dev/repl/7431d8f0a9a0432ab6270743f3d122e8/embed?version=4.2.8
 ---
 <!--Präsentation: Tobi-->
 ---
