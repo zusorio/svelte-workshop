@@ -23,11 +23,16 @@ layout: section
 ---
 
 # Warum verwenden wir React?
+
+<v-clicks depth="2">
+
 - React-Code ist deklarativ
   - Wir beschreiben die Struktur der UI
   - React kümmert sich um die Änderungen
 - Wir müssen uns nicht um den DOM kümmern
   - `document.createElement`, `document.appendChild`, `document.removeChild` etc.
+</v-clicks>
+
 <!--Präsentation: Tobi-->
 ---
 layout: statement
@@ -146,12 +151,15 @@ url: https://svelte.dev/repl/7431d8f0a9a0432ab6270743f3d122e8?version=4.2.8
 
 # Components
 
+<v-clicks>
+
 - Definiert in `.svelte`-Dateien
 - Ein Component pro Datei (anders als in React)
 - Können in anderen Components verwendet werden
 - Können Props erhalten
 - Können Events emitten
 - Gekapselte Styles
+</v-clicks>
 <!--Präsentation: Maike-->
 ---
 src: ./pages/1-syntax.md

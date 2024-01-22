@@ -46,6 +46,7 @@ clicks: 3
 <!--Präsentation: Maike-->
 ---
 layout: stacked-code-with-comments
+clicks: 2
 ---
 
 # Components - Events
@@ -58,7 +59,7 @@ layout: stacked-code-with-comments
 
 ::code2::
 
-```svelte
+```svelte {all|8|all}
 <script>
   import Button from './Button.svelte';
   function clicked() {
@@ -71,7 +72,7 @@ layout: stacked-code-with-comments
 
 ::comments::
 
-<v-clicks>
+<v-clicks at="0">
 
 - Events ohne Handler werden an den Parent-Component weitergeleitet
 </v-clicks>
