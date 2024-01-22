@@ -14,7 +14,7 @@ clicks: 3
 
 ::code1::
 
-```svelte {1-2,6-9|1-2,6-9|all} {at:0}
+```svelte {1-3,7-9|1-3,7-9|1-3,7-9|all} {at:0}
 <!--Hello.svelte-->
 <script>
   export let name = "World";
@@ -43,7 +43,7 @@ clicks: 3
 - Props werden mit `export` definiert
 - Mit `=` können Props default-Werte zugewiesen werden
 - Reservierte Props können nicht direkt als Props verwendet werden
-  - Umgehen mit <br> `export { reservedProp as prop }`
+  - Umgehen mit <br> `export { prop as reservedProp }`
 </v-clicks>
 <!--Präsentation: Maike-->
 ---
@@ -83,14 +83,14 @@ clicks: 2
 <!--Präsentation: Phillip-->
 ---
 layout: stacked-code-with-comments
-clicks: 3
+clicks: 4
 ---
 
 # Components - Slots
 
 ::code1::
 
-```svelte
+```svelte {all|4,7,9|7|4,9|all}
 <!--Card.svelte-->
 <article>
   <div class="font-bold text-xl">
@@ -99,9 +99,7 @@ clicks: 3
   <p class="text-lg">
     <slot></slot>
   </p>
-  <div class="text-sm">
-    <slot name="footer"></slot>
-  </div>
+  <slot name="footer"></slot>
 </article>
 ```
 
@@ -143,9 +141,7 @@ transition: slide-down
 <p>Hello World!</p>
 
 <style>
-  p {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
+  p { font-family: 'Comic Sans'; }
 </style>
 ```
 

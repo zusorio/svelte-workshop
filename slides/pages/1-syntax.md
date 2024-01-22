@@ -66,13 +66,13 @@ clicks: 4
 <!--Präsentation: Phillip-->
 ---
 layout: code-with-comments
-clicks: 4
+clicks: 5
 ---
 
 # Syntax - Reactive Statements
 
 ::code::
-```svelte {all|4,16|all|6-8|all} {lines:true}
+```svelte {all|all|all|4,16|6-8|all}
 <script>
   let count = 0;
 
@@ -95,22 +95,15 @@ clicks: 4
 ::comments::
 
 <div>
+<v-clicks at="0">
 
 - Mit `$` wird ein **Reactive Statement** definiert
 - Reactive Statements werden ausgeführt, wenn sich eine abhängige Variable ändert
-
-<v-click at="0">
-
 - Verwendung um Variablen zu berechenen
   - In React nicht notwendig, da Variablen jedes mal neu berechnet werden
-</v-click>
-
-
-<v-click at="2">
-
 - Verwendung um Side-Effects auszuführen
   - Ähnlich wie `useEffect` in React
-</v-click>
+</v-clicks>
 
 </div>
 <!--Präsentation: Phillip-->
