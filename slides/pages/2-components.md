@@ -15,6 +15,7 @@ clicks: 3
 ::code1::
 
 ```svelte {1-2,6-9|1-2,6-9|all} {at:0}
+<!--Hello.svelte-->
 <script>
   export let name = "World";
 
@@ -26,6 +27,7 @@ clicks: 3
 ```
 ::code2::
 ```svelte
+<!--App.svelte-->
 <script>
   import Hello from './Hello.svelte';
 </script>
@@ -54,12 +56,14 @@ clicks: 2
 ::code1::
 
 ```svelte
+<!--Button.svelte-->
 <button on:click>Click me!</button>
 ```
 
 ::code2::
 
 ```svelte {all|8|all}
+<!--App.svelte-->
 <script>
   import Button from './Button.svelte';
   function clicked() {
@@ -87,6 +91,7 @@ clicks: 3
 ::code1::
 
 ```svelte
+<!--Card.svelte-->
 <article>
   <div class="font-bold text-xl">
     <slot name="header"></slot>
@@ -103,6 +108,7 @@ clicks: 3
 ::code2::
 
 ```svelte
+<!--App.svelte-->
 <script>
   import Card from './Card.svelte';
 </script>
@@ -133,6 +139,7 @@ transition: slide-down
 ::code1::
 
 ```svelte
+<!--Hello.svelte-->
 <p>Hello World!</p>
 
 <style>
@@ -145,6 +152,7 @@ transition: slide-down
 ::code2::
 
 ```svelte
+<!--App.svelte-->
 <script>
   import Hello from './Hello.svelte';
 </script>
@@ -153,6 +161,7 @@ transition: slide-down
 <p>Hello from the outside!</p>
 
 <style>
+  p { font-family: sans-serif; }
   :global(p) {
     font-size: 2rem;
   }
