@@ -8,7 +8,7 @@
 		<div class="space-y-2">
 			<h2 class="text-2xl font-bold">{exerciseGroup.name}</h2>
 			<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-				{#each exerciseGroup.exercises as exercise (exercise.name)}
+				{#each exerciseGroup.exercises as exercise (exercise.name + exercise.number)}
 					<a href={exercise.exercise} style:view-transition-name={`ex-${exercise.number}`}>
 						<article
 							class="rounded-lg bg-white p-4 shadow-lg outline outline-2 outline-sky-600 transition hover:shadow-xl hover:outline-sky-500"
