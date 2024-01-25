@@ -231,3 +231,19 @@ layout: statement
 ---
 # Vielen Dank für eure Aufmerksamkeit
 <!--Präsentation: Tobi-->
+
+
+---
+layout: statement
+---
+# Svelte
+
+## Web Dev Frontend
+
+## Tobias Meßner, Phillip Rügamer, Maike Kramer
+
+<!--Präsentation: -->
+
+---
+src: ./pages/3-svelte-kit.md
+---
