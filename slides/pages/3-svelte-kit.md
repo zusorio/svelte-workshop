@@ -20,12 +20,11 @@ npm install
 npm run dev
 ```
 
+::comments::
 - mehrerer Auswahlmöglichkeiten beim Erstellen für Grundkonfigurationen
   -  JavaScript with JSDoc oder TypeScript
   - Optionale Bibliotheken 
 
-::comments::
-- 
 <!--
 Präsentation: Maike? 
 - es kann ein Demo Projekt ausgewählt werden
@@ -66,12 +65,13 @@ my-project/
 - `lib/`
   - alles was mehrmals im Projekt verwendet wird z.B. Componenten
   - Verzeichnis kann über `$lib` angesprochen werden
+    - ``import Component from ´$lib/Component´ ``
   - `server`
     - enthält server-only code
 - `routes`
   - enthält die Routes
 <!--
-Präsentation:  
+Präsentation: Maike 
 - 
 -->
 ---
@@ -83,7 +83,9 @@ layout: stacked-code-with-comments
 ```svelte
 src/routes/ 
 │ web-dev-workshop/  
-│ ├ exercises/  
+│ ├ exercises/
+    [id]
+     └ +page.svelte  
 │ └ +page.svelte  
 │ web-dev-backend/  
 │ ├ dashboard/  
@@ -103,6 +105,27 @@ src/routes/
 Präsentation: Maike
 - Parameter kann für dynamisches Laden verwendet werden
 - in React wird ``<Link>`` verwendet
+-->
+---
+layout: stacked-code-with-comments
+---
+# Routing - Parameter
+
+``` svelte
+<-- routes/uebung/[id] -->
+<script>
+    import {page} from "$app/stores";
+</script>
+
+<p>Übung ID: {$page.params.id}</p>
+```
+
+::comments::
+
+
+<!--
+Präsentation: Maike
+
 -->
 
 ---
