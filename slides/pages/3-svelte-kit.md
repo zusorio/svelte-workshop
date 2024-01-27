@@ -9,6 +9,41 @@
 <!--Präsentation: Tobi-->
 
 ---
+layout: code-with-comments
+---
+# Ordnerstruktur
+
+::code::
+```
+my-project/
+├── src/
+│   ├── lib/
+│   │   ├── some-util.js
+│   │   └── server/
+│   │       └── some-server-util.js
+│   ├── routes/
+│   │   ├── +page.svelte
+│   │   ├── +page.server.js
+│   │   ├── +layout.svelte
+│   │   ├── +layout.server.js
+│   │   └── user/[id]/
+│   │       ├── +page.svelte
+│   │       ├── +page.js
+│   │       └── +server.js
+│   └── app.html
+├── static/
+│   └── favicon.ico
+├── package.json
+├── svelte.config.js
+└── vite.config.js
+```
+
+::comments::
+- Jede `+page.svelte` ist eine Route
+- Parameter werden in eckigen Klammern geschrieben
+- 
+
+---
 layout: stacked-code-with-comments
 ---
 # Routing
@@ -120,6 +155,45 @@ export function load() {
 - In `+page.svelte` zugriff mit `export let data`
 
 <!--Präsentation: Phillip -->
+---
+layout: stacked-code-with-comments
+---
+
+# Page Loading - Advanced
+
+::code1::
+```js
+// +page.server.js
+export async function load({ params, fetch }) {
+  const res = await fetch(`/users/${params.id}`);
+  const {user} = await res.json();
+  return {
+    user
+  };
+}
+```
+
+::code2::
+```svelte
+<!-- +page.svelte -->
+<script>
+  // automatisch typisiert
+  export let data;
+</script>
+    
+<p>{data.user.name}</p>
+```
+
+::comments::
+- `load`-Funktion kann auch Parameter entgegennehmen
+  - `params` enthält Route-Parameter
+    - `/[id]/+page.svelte` → `params.id`
+  - `fetch` kann für API-Requests verwendet werden
+    - Wird eine interne Route aufgerufen, wird der Handler direkt aufgerufen
+  - Weitere Parameter: `cookies`, `parent`, `url`, `route`, `setHeaders`, ...
+
+<!--Präsentation: Phillip -->
+
 ---
 layout: stacked-code-with-comments
 ---
