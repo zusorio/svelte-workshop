@@ -39,17 +39,28 @@ my-project/
 ```
 
 ::comments::
-- Jede `+page.svelte` ist eine Route
-- Parameter werden in eckigen Klammern geschrieben
-- 
+- Jede `+page.svelte` in dem Ordner `routes` ist eine Route
+- Parameter werden in eckigen Klammern geschrieben 
 
 ---
 layout: stacked-code-with-comments
 ---
 # Routing
 
+::code1::
+```svelte
+src/routes/ 
+│ web-dev-workshop/  
+│ ├ exercises/  
+│ └ +page.svelte  
+│ web-dev-backend/  
+│ ├ dashboard/  
+│ └ +page.svelte  
+└ +page.svelte
+```
+::comments::
 - Verwendet dateibasiertes Routing
-- Jede `+page.svelte`  die in dem `src/routes/<ordnername>` erstellt wird ist ist eine Route auf die navigiert werden kann
+- Jede `+page.svelte`  die in dem `src/routes/<ordnername>` erstellt wird ist eine Route auf die navigiert werden kann
 - `src/routes/webdev/+page.svelte` → `/webdev`
 - `src/routes/webdev/[uebung]/+page.svelte` → Route mit einem Parameter
 - Für Links wird `<a>` verwendet
@@ -80,11 +91,23 @@ layout: stacked-code-with-comments
 <!-- +page.svelte -->
 <h1>Home</h1>
 ```
+
+```
+<!-- src/routes/ -->  
+│ (web-dev-workshop)/  
+│ ├ exercises/  
+│ └ +layout.svelte  
+│ (web-dev-backend)/  
+│ ├ dashboard/  
+│ └ +layout.svelte  
+└ +layout.svelte
+```
+
 ::comments::
 - Enthält HTML-Struktur die auf jeder Seite angezeigt wird (Header, Footer, etc.)
 - In `+layout.svelte` definiert
   - `<slot></slot>` wird durch den Inhalt der Seite ersetzt
-- Nesting von Layouts möglich
+- Verschachtelung von Layouts möglich
 
 <!--Präsentation: Maike -->
 ---
