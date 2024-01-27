@@ -11,6 +11,31 @@
 ---
 layout: code-with-comments
 ---
+# Wie erstellt man ein SvelteKit Projekt?
+
+::code::
+```
+npm create svelte@latest webdev
+cd my-app
+npm install
+npm run dev
+```
+
+- mehrerer Auswahlmöglichkeiten beim Erstellen für Grundkonfigurationen
+  -  JavaScript with JSDoc oder TypeScript
+  - Optionale Bibliotheken 
+
+::comments::
+- 
+<!--
+Präsentation: Maike? 
+- Demo Projekt 
+- ESLint, Prettier, Playwright, Vitetest
+
+-->
+---
+layout: code-with-comments
+---
 # Ordnerstruktur
 
 ::code::
