@@ -223,7 +223,7 @@ layout: statement
 ---
 layout: statement
 ---
-## Nächste Woche
+## Nachher
 # SvelteKit
 <!--Präsentation: Tobi-->
 ---
@@ -234,9 +234,9 @@ layout: statement
 
 
 ---
-layout: statement
+layout: intro
 ---
-# Svelte
+# SvelteKit
 
 ## Web Dev Frontend
 
