@@ -12,7 +12,6 @@
 layout: code-with-comments
 ---
 # Wie erstellt man ein SvelteKit Projekt?
-
 ::code::
 ```
 npm create svelte@latest webdev
@@ -29,9 +28,8 @@ npm run dev
 - 
 <!--
 Präsentation: Maike? 
-- Demo Projekt 
-- ESLint, Prettier, Playwright, Vitetest
-
+- es kann ein Demo Projekt ausgewählt werden
+- Bibliotheken: ESLint, Prettier, Playwright, Vitetest
 -->
 ---
 layout: code-with-comments
@@ -64,9 +62,18 @@ my-project/
 ```
 
 ::comments::
-- Jede `+page.svelte` in dem Ordner `routes` ist eine Route
-- Parameter werden in eckigen Klammern geschrieben 
 
+- `lib/`
+  - alles was mehrmals im Projekt verwendet wird z.B. Componenten
+  - Verzeichnis kann über `$lib` angesprochen werden
+  - `server`
+    - enthält server-only code
+- `routes`
+  - enthält die Routes
+<!--
+Präsentation:  
+- 
+-->
 ---
 layout: stacked-code-with-comments
 ---
@@ -85,9 +92,11 @@ src/routes/
 ```
 ::comments::
 - Verwendet dateibasiertes Routing
-- Jede `+page.svelte`  die in dem `src/routes/<ordnername>` erstellt wird ist eine Route auf die navigiert werden kann
+- Jede `+page.svelte` in dem Ordner `routes` ist eine Route
+  - auf die Routes kann direkt navigiert werden
 - `src/routes/webdev/+page.svelte` → `/webdev`
-- `src/routes/webdev/[uebung]/+page.svelte` → Route mit einem Parameter
+- Parameter werden in eckigen Klammern geschrieben
+  - `src/routes/webdev/[uebung]/+page.svelte` → Route mit einem Parameter
 - Für Links wird `<a>` verwendet
  
 <!--
