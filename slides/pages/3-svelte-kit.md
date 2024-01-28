@@ -404,4 +404,14 @@ export async function GET({ request }) {
 - Allerdings sind Form Actions meistens besser geeignet
 <!--Präsentation: Tobi -->
 
+---
+layout: statement
+---
 
+# Übungen
+
+---
+layout: statement
+---
+# Vielen Dank für eure Aufmerksamkeit
+<!--Präsentation: Tobi-->
