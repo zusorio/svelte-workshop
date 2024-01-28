@@ -6,5 +6,5 @@
 
 ## Du benutzt VSCode?
 
-- Führe in dem `exercises-week1`-Ordner `npm install` aus.
+- Führe in dem `exercises-svelte`-Ordner `npm install` aus.
 - Starte die Übung mit `npm run dev`.
