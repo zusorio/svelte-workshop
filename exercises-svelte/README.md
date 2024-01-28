@@ -1,4 +1,4 @@
-# Übungen Woche 1
+# Übungen Svelte
 
 ## Du benutzt StackBlitz?
 

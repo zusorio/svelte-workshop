@@ -1,4 +1,4 @@
-import { createUser, getUsers } from '$lib/db.js';
+import { createUser, getUsers } from '$lib/db';
 import { fail } from '@sveltejs/kit';
 
 export const actions = {
