@@ -25,3 +25,15 @@ Du hast ein Svelte Projekt bekommen, in dem dir im `lib` Ordner Components zur V
 4. Erstelle in dem `/animals` Ordner eine Route mit einem id Parameter. 
    - Gibt den Parameter auf der Seite aus
 5. Erweitere, die erstellte `/animals/+page.svelte` Datei um zwei Links der die Parameter "1" und "2" aufruft
+
+## Page loading
+
+Du hast ein Svelte Projekt bekommen, das eine Übersicht über die Länder in Europa anzeigt.
+
+1. Erstelle eine `+page.server.js` Datei in dem `page-loading` Ordner
+    - importiere die Datei `../countries.js`
+    - erstelle eine `load()` Funktion, die den Namen und Content der Länder zurückgibt
+2. Bearbeite die `page.svelte` Datei so, dass die Länder aufgelistet werden
+    - im `<script>` Tag exportiere die Variable `data`
+    - erstelle einen Loop der für jedes Land in data den Namen und content der Länder ausgibt
+3. TODO: Page loading mit parameter

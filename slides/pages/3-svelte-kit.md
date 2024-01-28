@@ -201,12 +201,6 @@ layout: stacked-code-with-comments
   -->
 
 ---
-layout: statement
----
-
-# Übungen
-
----
 layout: stacked-code-with-comments
 ---
 
@@ -285,6 +279,12 @@ export async function load({ params, fetch }) {
   - Weitere Parameter: `cookies`, `parent`, `url`, `route`, `setHeaders`, ...
 
 <!--Präsentation: Phillip -->
+
+---
+layout: statement
+---
+
+# Übungen
 
 ---
 layout: stacked-code-with-comments
