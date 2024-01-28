@@ -84,8 +84,8 @@ layout: stacked-code-with-comments
 src/routes/ 
 │ web-dev-workshop/  
 │ ├ exercises/
-│ │   [id]
-│ │    └ +page.svelte  
+    [id]
+     └ +page.svelte  
 │ └ +page.svelte  
 │ web-dev-backend/  
 │ ├ dashboard/  
@@ -165,21 +165,8 @@ layout: stacked-code-with-comments
 - In `+layout.svelte` definiert
   - `<slot></slot>` wird durch den Inhalt der Seite ersetzt
 - Verschachtelung von Layouts möglich
-- Gruppieren von Layouts möglich über `(groupname)`
 
 <!--Präsentation: Maike -->
-
----
-layout: stacked-code-with-comments
----
-
-# Übungen - Routing und Layout
-1. Erstelle im Root verzeichnis von Route eine index Datei (`+page.svelte`) und gebe dort eine Überschrift "Web Dev Workshop aus"
-2. Erstelle im gleichen Verzeichnis eine Layout-Datei, lade in dieser Datei die Component "Header" aus dem lib Ordner
-3. Erstelle eine neue Route, die über den Pfad `/animals` aufgerufen wird. Gebe dort eine Überschrift "Tiere" aus. Verlinke die neu erstellte Seite auf der Root Route
-4. Erstelle in dem `/animals` Ordner eine Route mit einem id Parameter. Gibt den Parameter auf der Seite aus
-5. Erweitere, die erstellte `/animals/+page.svelte` Datei um zwei Links der die Parameter "1" und "2" aufruft
-Eine ausführliche Beschreibung dazu findet ihr in der ReadMe im Projekt "exercises-sveltekit-01"
 ---
 layout: stacked-code-with-comments
 ---
@@ -195,11 +182,29 @@ layout: stacked-code-with-comments
   import { navigating, page, updated } from '$app/stores';
   import { PUBLIC_TEST_VAR } from '$env/static/public';
   import { env } from '$env/dynamic/public';
-  // TODO
 
 </script>
 ```
-<!--Präsentation: Phillip -->
+
+::comments::
+
+- SvelteKit stellt schon einige Module zur Verfügung
+- Statische Imports werden schon beim Build geladen
+- Dynamische Imports müssen alle von Server zu Client geschickt werden und kann deswegen größere Netzwerklast verursachen
+
+<!--Präsentation: Phillip 
+- `$app/environment` - Informationen über die Umgebung
+- `$app/navigation` - Navigation innerhalb der App
+- `$app/stores` - Stores für die aktuelle Seite
+- `$env/static/public` und `$env/dynamic/public` 
+  - Zugriff auf Umgebungsvariablen aus `.env` Datei 
+  -->
+
+---
+layout: statement
+---
+
+# Übungen
 
 ---
 layout: stacked-code-with-comments
@@ -280,12 +285,6 @@ export async function load({ params, fetch }) {
   - Weitere Parameter: `cookies`, `parent`, `url`, `route`, `setHeaders`, ...
 
 <!--Präsentation: Phillip -->
-
----
-layout: statement
----
-
-# Übungen
 
 ---
 layout: stacked-code-with-comments
@@ -417,14 +416,4 @@ export async function GET({ request }) {
 - Allerdings sind Form Actions meistens besser geeignet
 <!--Präsentation: Tobi -->
 
----
-layout: statement
----
 
-# Übungen
-
----
-layout: statement
----
-# Vielen Dank für eure Aufmerksamkeit
-<!--Präsentation: Tobi-->
