@@ -179,7 +179,7 @@ layout: stacked-code-with-comments
 3. Erstelle eine neue Route, die über den Pfad `/animals` aufgerufen wird. Gebe dort eine Überschrift "Tiere" aus. Verlinke die neu erstellte Seite auf der Root Route
 4. Erstelle in dem `/animals` Ordner eine Route mit einem id Parameter. Gibt den Parameter auf der Seite aus
 5. Erweitere, die erstellte `/animals/+page.svelte` Datei um zwei Links der die Parameter "1" und "2" aufruft
-
+Eine ausführliche Beschreibung dazu findet ihr in der ReadMe im Projekt "exercises-sveltekit-01"
 ---
 layout: stacked-code-with-comments
 ---
