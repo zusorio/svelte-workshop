@@ -2,6 +2,8 @@
 	export let data;
 </script>
 
+<!--Hier soll eventuell die Fehlermeldung angezeigt werden-->
+
 <form method="POST">
 	<label>
 		<span>Name</span>

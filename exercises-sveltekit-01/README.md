@@ -1,18 +1,21 @@
+# Übungen SvelteKit 1
 
+## Du benutzt StackBlitz?
 
-```bash
-# start project
-npm install
-npm run dev -- --open
-```
-# Aufgaben
+- Warte, bis die Seite vollständig geladen ist. Fertig.
+
+## Du benutzt VSCode?
+
+- Führe in dem `exercises-sveltekit-01`-Ordner `npm install` aus.
+- Starte die Übung mit `npm run dev`.
+
 ## Routing und Layouts
-Du hast ein Svelte Projekt bekommen, in dem dir im `lib` Ordner Component zur verfügung stehen. 
+Du hast ein Svelte Projekt bekommen, in dem dir im `lib` Ordner Components zur Verfügung stehen. 
 
 1. Erstelle im Root verzeichnis von Routes eine "Index" Datei (`+page.svelte`)
     - gebe dort eine Überschrift "Web Dev Workshop aus"
 2. Erstelle im gleichen Verzeichnis eine Layout-Datei 
-    - importiere darin die Datei "import "../app.css";"
+    - importiere darin die Datei `../app.css`
     - lade in dieser Datei die Component "Header" aus dem lib Ordner
     - und füge die Header Component ein
     - Denk daran einen Slot für den Content auszugeben
