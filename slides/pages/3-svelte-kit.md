@@ -106,6 +106,40 @@ Präsentation: Maike
 - Parameter kann für dynamisches Laden verwendet werden
 - in React wird ``<Link>`` verwendet
 -->
+
+---
+layout: stacked-code-with-comments
+---
+
+# Modules
+
+::code1::
+```svelte
+<!-- +page.svelte -->
+<script>
+  import { browser, building, dev, version } from '$app/environment';
+  import { goto, invalidate, onNavigate } from '$app/navigation';
+  import { navigating, page, updated } from '$app/stores';
+  import { PUBLIC_TEST_VAR } from '$env/static/public';
+  import { env } from '$env/dynamic/public';
+
+</script>
+```
+
+::comments::
+
+- SvelteKit stellt schon einige Module zur Verfügung
+- Statische Imports werden schon beim Build geladen
+- Dynamische Imports müssen alle von Server zu Client geschickt werden und kann deswegen größere Netzwerklast verursachen
+
+<!--Präsentation: Phillip 
+- `$app/environment` - Informationen über die Umgebung
+- `$app/navigation` - Navigation innerhalb der App
+- `$app/stores` - Stores für die aktuelle Seite
+- `$env/static/public` und `$env/dynamic/public` 
+  - Zugriff auf Umgebungsvariablen aus `.env` Datei 
+  -->
+
 ---
 layout: stacked-code-with-comments
 ---
@@ -167,39 +201,6 @@ layout: stacked-code-with-comments
 - Verschachtelung von Layouts möglich
 
 <!--Präsentation: Maike -->
----
-layout: stacked-code-with-comments
----
-
-# Modules
-
-::code1::
-```svelte
-<!-- +page.svelte -->
-<script>
-  import { browser, building, dev, version } from '$app/environment';
-  import { goto, invalidate, onNavigate } from '$app/navigation';
-  import { navigating, page, updated } from '$app/stores';
-  import { PUBLIC_TEST_VAR } from '$env/static/public';
-  import { env } from '$env/dynamic/public';
-
-</script>
-```
-
-::comments::
-
-- SvelteKit stellt schon einige Module zur Verfügung
-- Statische Imports werden schon beim Build geladen
-- Dynamische Imports müssen alle von Server zu Client geschickt werden und kann deswegen größere Netzwerklast verursachen
-
-<!--Präsentation: Phillip 
-- `$app/environment` - Informationen über die Umgebung
-- `$app/navigation` - Navigation innerhalb der App
-- `$app/stores` - Stores für die aktuelle Seite
-- `$env/static/public` und `$env/dynamic/public` 
-  - Zugriff auf Umgebungsvariablen aus `.env` Datei 
-  -->
-
 ---
 layout: stacked-code-with-comments
 ---
