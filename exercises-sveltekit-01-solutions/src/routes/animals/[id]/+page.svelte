@@ -2,4 +2,4 @@
     import {page} from "$app/stores";
 </script>
 
-<p>Übung ID: {$page.id}</p>
+<p>Tier ID: {$page.params.id}</p>

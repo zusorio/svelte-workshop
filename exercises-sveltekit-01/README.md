@@ -9,22 +9,27 @@
 - Führe in dem `exercises-sveltekit-01`-Ordner `npm install` aus.
 - Starte die Übung mit `npm run dev`.
 
+# Aufgabe 1
+
 ## Routing und Layouts
-Du hast ein Svelte Projekt bekommen, in dem dir im `lib` Ordner Components zur Verfügung stehen. 
+Du hast ein Svelte Projekt bekommen, in dem dir im `lib` Ordner Components zur Verfügung stehen.
 
 1. Erstelle im Root verzeichnis von Routes eine "Index" Datei (`+page.svelte`)
-    - gebe dort eine Überschrift "Web Dev Workshop aus"
-2. Erstelle im gleichen Verzeichnis eine Layout-Datei 
-    - importiere darin die Datei `../app.css`
-    - lade in dieser Datei die Component "Header" aus dem lib Ordner
-    - und füge die Header Component ein
-    - Denk daran einen Slot für den Content auszugeben
+   - gebe dort eine Überschrift "Web Dev Workshop aus"
+2. Erstelle im gleichen Verzeichnis eine Layout-Datei
+   - importiere darin die Datei `../app.css`
+   - lade in dieser Datei die Component "Header" sowie "Content" aus dem lib Ordner
+   - füge die Header und Content Component ein
+   - Tipp: Denk daran einen Slot für den Content auszugeben, in der Content Component in der `+layout.svelte`
 3. Erstelle eine neue Route, die über den Pfad `/animals` aufgerufen wird
-   - Gebe dort eine Überschrift "Tiere" aus. 
+   - Gebe dort eine Überschrift "Tiere" aus.
    - Verlinke die neu erstellte Seite auf der Root Route
-4. Erstelle in dem `/animals` Ordner eine Route mit einem id Parameter. 
+4. Erstelle in dem `/animals` Ordner eine Route mit einem id Parameter.
    - Gibt den Parameter auf der Seite aus
-5. Erweitere, die erstellte `/animals/+page.svelte` Datei um zwei Links der die Parameter "1" und "2" aufruft
+5. Erweitere, die erstellte `/animals/+page.svelte` Datei um zwei Links um das Tier mit der Id 1 und 2 aufzurufen
+
+
+# Aufgabe 2
 
 ## Page loading
 
