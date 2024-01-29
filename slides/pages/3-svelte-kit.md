@@ -282,9 +282,31 @@ export async function load({ params, fetch }) {
 
 ---
 layout: statement
+transition: slide-up
 ---
 
-# Übungen
+## Übungen
+# wdw.zsr.app
+## exercises-sveltekit-01
+<!--Präsentation: Tobi-->
+
+---
+layout: iframe
+name: WDW embed
+url: https://wdw.zsr.app
+transition: slide-down
+---
+
+---
+layout: statement
+---
+
+## Übungen
+# wdw.zsr.app
+## exercises-sveltekit-01
+<!--Präsentation: Tobi-->
+
+
 
 ---
 layout: stacked-code-with-comments
@@ -416,4 +438,18 @@ export async function GET({ request }) {
 - Allerdings sind Form Actions meistens besser geeignet
 <!--Präsentation: Tobi -->
 
+---
+layout: statement
+---
 
+## Übungen
+# wdw.zsr.app
+## exercises-sveltekit-02
+<!--Präsentation: Tobi-->
+
+---
+layout: statement
+---
+
+# Vielen Dank für eure Aufmerksamkeit
+<!--Präsentation: Tobi-->
