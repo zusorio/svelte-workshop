@@ -155,7 +155,8 @@ layout: stacked-code-with-comments
 ```
 
 ::comments::
-
+- Route mit dynamischen Parameter
+- mehrere Routingparameter pro URL möglich 
 
 <!--
 Präsentation: Maike
@@ -185,7 +186,7 @@ layout: stacked-code-with-comments
 
 ```
 <!-- src/routes/ -->  
-│ (web-dev-workshop)/  
+│ web-dev-workshop/  
 │ ├ exercises/  
 │ └ +layout.svelte  
 │ (web-dev-backend)/  
@@ -199,8 +200,12 @@ layout: stacked-code-with-comments
 - In `+layout.svelte` definiert
   - `<slot></slot>` wird durch den Inhalt der Seite ersetzt
 - Verschachtelung von Layouts möglich
+- `(routename)` zur gruppierung um verschiedene Layouts zu verwenden 
 
-<!--Präsentation: Maike -->
+<!--
+Präsentation: Maike 
+- `(routename)` kann man nutzen, um Routen zu gruppieren und verschiedene Layouts zu verwenden 
+-->
 ---
 layout: stacked-code-with-comments
 ---
