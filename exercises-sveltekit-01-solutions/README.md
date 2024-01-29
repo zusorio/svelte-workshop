@@ -1,38 +1,39 @@
-# create-svelte
+# Übungen SvelteKit 1
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Du benutzt StackBlitz?
 
-## Creating a project
+- Warte, bis die Seite vollständig geladen ist. Fertig.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Du benutzt VSCode?
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Führe in dem `exercises-sveltekit-01`-Ordner `npm install` aus.
+- Starte die Übung mit `npm run dev`.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Routing und Layouts
+Du hast ein Svelte Projekt bekommen, in dem dir im `lib` Ordner Components zur Verfügung stehen.
 
-## Developing
+1. Erstelle im Root verzeichnis von Routes eine "Index" Datei (`+page.svelte`)
+    - gebe dort eine Überschrift "Web Dev Workshop aus"
+2. Erstelle im gleichen Verzeichnis eine Layout-Datei
+    - importiere darin die Datei `../app.css`
+    - lade in dieser Datei die Component "Header" aus dem lib Ordner
+    - und füge die Header Component ein
+    - Denk daran einen Slot für den Content auszugeben
+3. Erstelle eine neue Route, die über den Pfad `/animals` aufgerufen wird
+    - Gebe dort eine Überschrift "Tiere" aus.
+    - Verlinke die neu erstellte Seite auf der Root Route
+4. Erstelle in dem `/animals` Ordner eine Route mit einem id Parameter.
+    - Gibt den Parameter auf der Seite aus
+5. Erweitere, die erstellte `/animals/+page.svelte` Datei um zwei Links der die Parameter "1" und "2" aufruft
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Page loading
 
-```bash
-npm run dev
+Du hast ein Svelte Projekt bekommen, das eine Übersicht über die Länder in Europa anzeigt.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+1. Erstelle eine `+page.server.js` Datei in dem `page-loading` Ordner
+    - importiere die Datei `../countries.js`
+    - erstelle eine `load()` Funktion, die den Namen und Content der Länder zurückgibt
+2. Bearbeite die `page.svelte` Datei so, dass die Länder aufgelistet werden
+    - im `<script>` Tag exportiere die Variable `data`
+    - erstelle einen Loop der für jedes Land in data den Namen und content der Länder ausgibt
+3. TODO: Page loading mit parameter
