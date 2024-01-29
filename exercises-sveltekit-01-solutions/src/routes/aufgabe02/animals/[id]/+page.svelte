@@ -4,4 +4,5 @@
 </script>
 
 <H1>{data.animal.name}</H1>
-<div><p>{data.animal.content}<p></div>
+<p>{data.animal.content}</p>
+<img src={data.animal.imageURL} alt={data.animal.name} />

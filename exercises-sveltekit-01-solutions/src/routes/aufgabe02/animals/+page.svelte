@@ -6,7 +6,7 @@
 <H1>Tiere</H1>
 
 <ul>
-    {#each data.summaries as {id, name}}
+    {#each data.animals as {id, name}}
         <li><a href="animals/{id}">{name}</a></li>
     {/each}
 </ul>
