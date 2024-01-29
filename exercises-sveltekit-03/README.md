@@ -6,7 +6,7 @@
 
 ## Du benutzt VSCode?
 
-- Führe in dem `exercises-sveltekit-02`-Ordner `npm install` aus.
+- Führe in dem `exercises-sveltekit-03`-Ordner `npm install` aus.
 - Starte die Übung mit `npm run dev`.
 
 ## Form Actions
