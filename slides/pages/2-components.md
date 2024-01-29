@@ -80,7 +80,8 @@ clicks: 2
 
 - Events ohne Handler werden an den Parent-Component weitergeleitet
 </v-clicks>
-<!--Präsentation: Phillip-->
+<!--Präsentation: Phillip
+Hier haben ein Beispiel von components wenn wir ein Child component haben. Event handlern in children die leer sind werden an den Parent weitergegeben-->
 ---
 layout: stacked-code-with-comments
 clicks: 4

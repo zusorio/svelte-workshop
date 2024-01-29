@@ -244,7 +244,7 @@ transition: slide-down
   - Wie `key` in React
 - Optional: `index` um den Index zu definieren
 </v-clicks>
-<!--Präsentation: Phillip-->
+<!--Präsentation: Phillip -- die keys zu definieren ist optional aber aus performance gründen sollte man sie definieren-->
 ---
 layout: section
 ---
