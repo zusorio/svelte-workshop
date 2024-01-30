@@ -450,7 +450,7 @@ layout: statement
 
 ## Übungen
 # wdw.zsr.app
-## exercises-sveltekit-03
+## exercises-sveltekit-02
 <!--Präsentation: Tobi-->
 
 ---
