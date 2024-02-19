@@ -9,7 +9,7 @@ background: /svelte-machine.png
 
 # Svelte
 
-## Web Dev Frontend
+## Web Dev Workshop
 
 ## Tobias Meßner, Phillip Rügamer, Maike Kramer
 
@@ -238,7 +238,7 @@ layout: intro
 ---
 # SvelteKit
 
-## Web Dev Frontend
+## Web Dev Workshop
 
 ## Tobias Meßner, Phillip Rügamer, Maike Kramer
 
